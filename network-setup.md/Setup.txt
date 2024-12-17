@@ -1,0 +1,31 @@
+
+Devices in the Network:
+Router:
+- Cisco 2901
+GigabitEthernet0/0: 168.90.0.1/16
+GigabitEthernet0/1: 210.3.14.1/24
+
+Switch 1:
+Cisco 2960
+PC 1: DHCP - IP Address assigned: 168.90.0.2
+PC 2: DHCP - IP Address assigned: 168.90.0.3
+Laptop: DHCP - IP Address assigned: 168.90.0.4
+Server 1: DHCP - IP Address assigned: 168.90.0.5
+
+Switch 2:
+Cisco 2960
+PC 3: DHCP - IP Address assigned: 210.3.14.2
+Server 2: DHCP - IP Address assigned: 210.3.14.3
+Server 3: DHCP - IP Address assigned: 210.3.14.4
+
+
+
+DHCP Configuration on the Router:
+DHCP Pool 1: 
+Network: 168.90.0.0/16
+Gateway: 168.90.0.1
+IP Range: 168.90.0.2 - 168.90.0.100
+DHCP Pool 2: 
+Network: 210.3.14.0/24
+Gateway: 210.3.14.1
+IP Range: 210.3.14.2 - 210.3.14.100
